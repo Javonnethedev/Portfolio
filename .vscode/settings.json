@@ -23,5 +23,6 @@
   "workbench.view.alwaysShowHeaderActions": true,
   "editor.rulers": [
       100, 120
-  ]
+  ],
+  "svg.preview.background": "white"
 }
