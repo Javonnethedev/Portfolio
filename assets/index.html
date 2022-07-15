@@ -7,7 +7,7 @@
   <!--========================= UNICONS ============================-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <!--========================= SWIPER CSS =========================-->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
   <!--============================ CSS =============================-->
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
 
@@ -102,7 +102,7 @@
           <div class="home__data">
             <h1 class="home__title">Hello, I am Chauncey</h1>
             <h3 class="home__subtitle">Software Developer</h3>
-            <p class="home__description">Intermediate level experience in web design and development,
+            <p class="home__description">Junior level experience in web design and development,
               I always aim to producing high quality work.</p>
               <a href="#contact" class="button button--flex">
                 Contact Me<i class="uil uil-message button__icon"></i>
@@ -145,13 +145,15 @@
             <span class="about__info-title">2+</span>
             <span class="about__info-name">Companies <br> worked</span>
           </div>
-          <div class="about__buttons">
+
+    </div>
+        <div class="about__button">
             <a download="" href="/assets/pdf/Chauncey Currie resume.pdf" class="button button--flex">
-              Download CV<i class="uil uil-download-alt button__icon"></i>
+              Download CV
+              <i class="uil uil-download-alt button__icon"></i>
             </a>
           </div>
         </div>
-    </div>
   </div>
     </section>
     <!--============= SKILLS ===========-->
@@ -486,7 +488,7 @@
     </section>
 
     <!--============= SERVICES ============-->
-    <sections class="services section" id="services">
+    <section class="services section" id="services">
       <h2 class="section__title">Services</h2>
       <span class="section__subtitle">What I offer</span>
 
@@ -611,8 +613,92 @@
         </div>
         </div>-->
       </div>
-    </sections>
+    </section>
     <!--============= PORTFOLIO =============-->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">My recent work</span>
+
+      <div class="portfolio__container container swiper">
+        <div class="swiper-wrapper">
+          <!--============= PORTFOLIO 1 =============-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="/assets/images/portfolio1.jpg" alt="" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">TheWealthyMicroscope</h3>
+              <p class="portfolio__description">A modern informational website adaptable to all
+                devices, with ui components and animated interactions </p>
+              <a href="#" class="button button--flex button--small portfolio__button">
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--============= PORTFOLIO 2 =============-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="/assets/images/portfolio1.jpg" alt="" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">TheWealthyMicroscope</h3>
+              <p class="portfolio__description">A modern informational website adaptable to all
+                devices, with ui components and animated interactions </p>
+              <a href="#" class="button button--flex button--small portfolio__button">
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--============= PORTFOLIO 3 =============-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="/assets/images/portfolio1.jpg" alt="" class="portfolio__img">
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">TheWealthyMicroscope</h3>
+              <p class="portfolio__description">A modern informational website adaptable to all
+                devices, with ui components and animated interactions </p>
+              <a href="#" class="button button--flex button--small portfolio__button">
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!--============= PROJECT IN MIND =================-->
+    <section class="project section">
+      <div class="project__bg">
+        <div class="project__container container grid">
+          <div class="project__data">
+            <h2 class="project__title">You have a new project in mind?</h2>
+            <p class="project__description">Contact me now with any suggestions!
+              </p>
+              <a href="#contact" class="button button--flex button--white">
+                Contact Me
+                <i class="uil uil-message project__icon button__icon"></i>
+
+              </a>
+          </div>
+          <img src="/assets/images/project.png" alt="" class="project__img">
+        </div>
+      </div>
+    </section>
+    <!--============= TESTIMONIAL =====================-->
+
+    <!--============= CONTACT ME =====================-->
+
 </main>
 
 <!--=============================FOOTER=============================-->
@@ -622,7 +708,7 @@
 
 
 <!--=============================SWIPERJS============================-->
-<script src=""></script>
+<script src="/assets/js/swiper-bundle.min.js"></script>
 
 <!--=============================MAINJS==============================-->
 <script src="/assets/js/main.js"></script>

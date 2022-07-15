@@ -268,7 +268,7 @@
 .home__blob {
   width: 200px;
   fill: var(--first-color);
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .home__blob-img {
@@ -330,6 +330,7 @@
   padding: 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
 }
 
 .button:hover {
@@ -363,10 +364,11 @@
 }
     /*=============== ABOUT ==================*/
 .about__img {
-  width: 230px;
+  width: 280px;
   border-radius: .5rem;
   align-self: center;
   justify-self: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
 }
 
 .about__description {
@@ -396,9 +398,8 @@
   text-align: center;
 }
 
-.about__buttons {
+.about__button {
   display: flex;
-  justify-content: center;
 }
     /*=============== SKILLS ==================*/
 .skills__container {
@@ -619,12 +620,143 @@
 .services__button {
   cursor: pointer;
   font-size: var(--small-font-size);
+  box-shadow: none;
 }
+
+.services__button:hover .button__icon {
+  transform: translateX(.25rem);
+}
+
+.services__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.services__modal-content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.services__modal-services {
+  row-gap: 1rem;
+}
+
+.services__modal-service {
+  display: flex;
+}
+
+.services__modal-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+
+.services__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.services__modal-icon {
+  color: var(--first-color);
+  margin-right: var(--mb-0-25);
+}
+
+
     /* Active Modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
 
     /*======================= PORTFOLIO =====================*/
+.portfolio__container {
+  overflow: initial;
+}
 
+.portfolio__content {
+  padding: 0 1.5rem;
+}
+
+.portfolio__img {
+  width: 275px;
+  border-radius: .5rem;
+  justify-self: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content:'';
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -.5rem;
+}
+
+.swiper-button-next {
+  right: -.5rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-pagination-bullet-active:hover {
+  color: var(--first-color-lighter);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
     /*======================= PROJECT IN MIND ================*/
+
+    /*======================= TESTIMONIAL ================*/
+
+    /*======================= CONTACT ME ================*/
+
+    /*======================= FOOTER ================*/
 
 
 
